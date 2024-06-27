@@ -1,3 +1,6 @@
+import fc from 'd3fc';
+import d3 from 'd3';
+
 const customAxis = (baseAxis, isVertical = false, sign = 1) => {
     const translate = (x, y, o = 0) =>
         isVertical ? `translate(${y}, ${x + o})` : `translate(${x}, ${y + o})`;
